@@ -3,234 +3,461 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thon Gọn Tự Nhiên Cùng Aki - Giảm Béo Thuần Chay Bấm Huyệt</title>
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <title>Chạm Để Thăng Hoa - Se Khít & Ôn Ấm Tử Cung Thuần Chay</title>
+    <link href="https://cdnjs.cloudflare.com/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
-        /* RESET & BASE STYLES */
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Open Sans', sans-serif; color: #2d3748; line-height: 1.6; background-color: #f7fafc; }
-        h1, h2, h3, h4 { font-family: 'Montserrat', sans-serif; color: #1a4d2e; }
-        a { text-decoration: none; color: inherit; }
-        .container { max-width: 1000px; margin: 0 auto; padding: 0 15px; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
 
-        /* HEADER */
-        header { background-color: #ffffff; box-shadow: 0 2px 10px rgba(0,0,0,0.08); position: sticky; top: 0; z-index: 1000; }
-        .header-container { display: flex; flex-direction: column; align-items: center; padding: 12px 15px; text-align: center; }
-        .brand-name { font-size: 20px; font-weight: 700; color: #1a4d2e; text-transform: uppercase; letter-spacing: 0.5px; }
-        .brand-slogan { font-size: 13px; color: #d4af37; font-weight: 600; margin-top: 2px; }
+        body {
+            background-color: #fff9f9;
+            color: #333;
+            line-height: 1.6;
+            padding-bottom: 70px;
+        }
 
-        /* HERO SECTION */
-        .hero { background: linear-gradient(rgba(26, 77, 46, 0.9), rgba(26, 77, 46, 0.9)), url('https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=1000&q=80') center/cover; color: #fff; text-align: center; padding: 45px 15px; }
-        .hero h1 { color: #fff; font-size: 22px; margin-bottom: 12px; text-transform: uppercase; line-height: 1.4; }
-        .hero p { font-size: 14px; margin-bottom: 20px; opacity: 0.95; max-width: 700px; margin-left: auto; margin-right: auto; }
-        .btn-call { display: inline-block; background-color: #d4af37; color: #1a4d2e; padding: 12px 25px; border-radius: 25px; font-weight: 700; font-size: 14px; text-transform: uppercase; box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #800020, #b03060);
+            color: #fff;
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+        }
 
-        /* FEATURES */
-        .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin-top: -25px; margin-bottom: 35px; }
-        .feature-card { background: #fff; padding: 18px 15px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.06); text-align: center; border-bottom: 3px solid #1a4d2e; }
-        .feature-card h3 { font-size: 15px; margin-bottom: 5px; }
-        .feature-card p { font-size: 13px; color: #666; }
+        header h1 {
+            font-size: 20px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
 
-        /* SECTIONS */
-        .section-title { text-align: center; font-size: 20px; margin-bottom: 6px; color: #1a4d2e; }
-        .section-subtitle { text-align: center; color: #718096; margin-bottom: 25px; font-size: 13px; }
+        header p {
+            font-size: 12px;
+            opacity: 0.9;
+            margin-top: 2px;
+        }
 
-        /* ABOUT METHOD */
-        .about-box { background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.04); margin-bottom: 35px; font-size: 14px; }
-        .about-box p { margin-bottom: 12px; }
-        .about-box ul { padding-left: 18px; }
-        .about-box li { margin-bottom: 8px; }
+        /* Hero Banner */
+        .hero {
+            background: linear-gradient(rgba(128, 0, 32, 0.85), rgba(176, 48, 96, 0.85)), url('https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=800&q=80');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            padding: 35px 20px;
+            text-align: center;
+        }
 
-        /* COMPARISON TABLE */
-        .table-wrapper { overflow-x: auto; background: #fff; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); margin-bottom: 35px; }
-        table { width: 100%; border-collapse: collapse; text-align: left; font-size: 13px; }
-        th, td { padding: 10px 12px; border-bottom: 1px solid #edf2f7; }
-        th { background-color: #1a4d2e; color: white; white-space: nowrap; }
-        .highlight-col { background-color: #f0fdf4; font-weight: 600; color: #166534; }
+        .hero h2 {
+            font-size: 22px;
+            color: #ffe4e1;
+            margin-bottom: 12px;
+            line-height: 1.3;
+        }
 
-        /* PROS AND CONS */
-        .pros-cons-grid { display: grid; grid-template-columns: 1fr; gap: 15px; margin-bottom: 35px; }
-        .box-pros, .box-cons { background: #fff; padding: 18px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.04); font-size: 13px; }
-        .box-pros { border-top: 4px solid #2e7d32; }
-        .box-cons { border-top: 4px solid #e65100; }
-        .box-pros h3, .box-cons h3 { font-size: 16px; margin-bottom: 10px; }
-        .box-pros ul, .box-cons ul { padding-left: 18px; }
-        .box-pros li, .box-cons li { margin-bottom: 8px; }
+        .hero p {
+            font-size: 15px;
+            margin-bottom: 20px;
+            color: #fff;
+        }
 
-        /* CONTACT & FOOTER */
-        .contact-card { background: #e8f5e9; padding: 25px 18px; border-radius: 10px; text-align: center; margin-bottom: 30px; }
-        .contact-info { margin-top: 15px; text-align: left; background: #fff; padding: 15px; border-radius: 8px; font-size: 14px; }
-        .contact-info p { margin-bottom: 8px; }
-        footer { background: #1a4d2e; color: #fff; text-align: center; padding: 18px; font-size: 12px; }
+        .badge-tag {
+            background-color: #ffd700;
+            color: #800020;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 13px;
+            display: inline-block;
+            margin-bottom: 15px;
+        }
 
-        /* DESKTOP RESPONSIVE */
-        @media (min-width: 768px) {
-            .header-container { flex-direction: row; justify-content: space-between; }
-            .hero h1 { font-size: 28px; }
-            .hero p { font-size: 16px; }
-            .pros-cons-grid { grid-template-columns: 1fr 1fr; }
-            .section-title { font-size: 24px; }
-            .about-box, .contact-info { font-size: 15px; }
+        /* Container */
+        .container {
+            padding: 20px 15px;
+        }
+
+        /* Pain Points Section */
+        .pain-section {
+            background: #fff;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 15px rgba(220, 20, 60, 0.08);
+            border-left: 5px solid #b03060;
+        }
+
+        .section-title {
+            font-size: 18px;
+            color: #800020;
+            margin-bottom: 15px;
+            text-align: center;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .pain-list {
+            list-style: none;
+        }
+
+        .pain-list li {
+            margin-bottom: 12px;
+            padding-left: 28px;
+            position: relative;
+            font-size: 14px;
+            color: #4a4a4a;
+        }
+
+        .pain-list li i {
+            position: absolute;
+            left: 0;
+            top: 3px;
+            color: #dc143c;
+            font-size: 16px;
+        }
+
+        /* Solution Section */
+        .solution-section {
+            background: #fff0f3;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 25px;
+            border: 1px solid #ffccd5;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .feature-item {
+            background: #fff;
+            padding: 12px;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 13px;
+            font-weight: bold;
+            color: #800020;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        .feature-item i {
+            display: block;
+            font-size: 20px;
+            margin-bottom: 5px;
+            color: #b03060;
+        }
+
+        /* Comparison Table */
+        .comparison-section {
+            background: #fff;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        .comp-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            font-size: 13px;
+        }
+
+        .comp-table th, .comp-table td {
+            border: 1px solid #ffe4e1;
+            padding: 10px 8px;
+            text-align: center;
+        }
+
+        .comp-table th {
+            background-color: #800020;
+            color: white;
+            font-size: 12px;
+        }
+
+        .comp-table td:first-child {
+            font-weight: bold;
+            text-align: left;
+            background-color: #fff9f9;
+            color: #555;
+        }
+
+        .comp-good {
+            color: #2e7d32;
+            font-weight: bold;
+            background-color: #e8f5e9;
+        }
+
+        .comp-bad {
+            color: #c62828;
+            background-color: #ffebee;
+        }
+
+        /* Info & Contact Box */
+        .info-box {
+            background: linear-gradient(to bottom, #ffffff, #fff0f3);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 25px;
+            border: 1px solid #ffb6c1;
+        }
+
+        .info-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 12px;
+            font-size: 14px;
+        }
+
+        .info-item i {
+            color: #800020;
+            font-size: 18px;
+            margin-right: 12px;
+            margin-top: 2px;
+            width: 20px;
+            text-align: center;
+        }
+
+        .highlight-text {
+            color: #d81b60;
+            font-weight: bold;
+        }
+
+        /* CTA Form Section */
+        .form-section {
+            background: #fff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(128, 0, 32, 0.12);
+            border: 2px solid #b03060;
+        }
+
+        .form-group {
+            margin-bottom: 12px;
+        }
+
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 14px;
+            outline: none;
+        }
+
+        .form-group input:focus, .form-group textarea:focus {
+            border-color: #800020;
+        }
+
+        .btn-submit {
+            width: 100%;
+            background: linear-gradient(135deg, #d81b60, #800020);
+            color: #fff;
+            padding: 14px;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: bold;
+            text-transform: uppercase;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(216, 27, 96, 0.3);
+        }
+
+        /* Sticky Bottom Bar */
+        .bottom-bar {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: #fff;
+            display: flex;
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+            z-index: 1000;
+        }
+
+        .bottom-btn {
+            flex: 1;
+            padding: 12px 5px;
+            text-align: center;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 13px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .btn-call {
+            background-color: #25d366;
+            color: white;
+        }
+
+        .btn-zalo {
+            background-color: #0084ff;
+            color: white;
+        }
+
+        .bottom-btn i {
+            margin-right: 5px;
+            font-size: 16px;
         }
     </style>
 </head>
 <body>
 
-    <!-- HEADER -->
+    <!-- Header -->
     <header>
-        <div class="container header-container">
-            <div class="brand-name">🌿 THON GỌN TỰ NHIÊN CÙNG AKI NÀO!</div>
-            <div class="brand-slogan">Sức Khỏe Bên Trong - Vóc Dáng Bên Ngoài</div>
-        </div>
+        <h1>Chạm Để Thăng Hoa</h1>
+        <p>Liệu Pháp Trị Liệu & Ôn Ấm Tử Cung Thuần Chay</p>
     </header>
 
-    <!-- HERO -->
-    <section class="hero">
-        <div class="container">
-            <h1>Giảm Béo Thuần Chay Bằng Bấm Huyệt Cân Bằng Chuyển Hóa</h1>
-            <p>An toàn tuyệt đối - Không xâm lấn - Không uống thuốc - Không ăn kiêng hay tập luyện vất vả!</p>
-            <a href="tel:0328668505" class="btn-call">📞 Gọi Ngay: 0328 668 505</a>
-        </div>
-    </section>
-
-    <!-- HIGHLIGHTS -->
-    <div class="container">
-        <div class="features">
-            <div class="feature-card">
-                <h3>🚫 Không Xâm Lấn</h3>
-                <p>Không phẫu thuật, không tiêm chích đau đớn.</p>
-            </div>
-            <div class="feature-card">
-                <h3>🥗 Chuẩn Thuần Chay</h3>
-                <p>Nâng cao sức khỏe từ gốc rễ tế bào.</p>
-            </div>
-            <div class="feature-card">
-                <h3>💆 Bấm Huyệt Y Học</h3>
-                <p>Khai thông kinh lạc, kích thích đốt mỡ tự nhiên.</p>
-            </div>
-            <div class="feature-card">
-                <h3>🧘 Không Ép Cân</h3>
-                <p>Không nhịn ăn mệt mỏi, không sụt giảm sức khỏe.</p>
-            </div>
-        </div>
+    <!-- Hero Banner -->
+    <div class="hero">
+        <span class="badge-tag">100% Thuần Chay Không Phẫu Thuật</span>
+        <h2>TÌM LẠI BẢN NĂNG THĂNG HOA & SỰ TỰ TIN RẠNG RỠ CỦA PHỤ NỮ SAU SINH</h2>
+        <p>Se khít tự nhiên – Ôn ấm tử cung – Lấy lại sự khít khao, nồng cháy như thời con gái bằng phương pháp Bấm Huyệt Độc Quyền.</p>
     </div>
 
-    <!-- PHƯƠNG PHÁP -->
-    <section class="container">
-        <h2 class="section-title">Giải Pháp Giảm Béo Thuần Chay Là Gì?</h2>
-        <p class="section-subtitle">Phương pháp nuôi dưỡng sức khỏe tự nhiên tại Aki Spa</p>
-        <div class="about-box">
-            <p>Nhiều người gặp khó khăn trong việc giảm cân không phải do ăn quá nhiều, mà do <strong>hệ thống chuyển hóa trong cơ thể bị rối loạn</strong>, gây tích tụ mỡ thừa và độc tố.</p>
-            <p>Tại <strong>Thon Gọn Tự Nhiên Cùng Aki</strong>, phương pháp bấm huyệt tác động trực tiếp vào các huyệt đạo quan trọng giúp:</p>
-            <ul>
-                <li><strong>Đả thông kinh lạc:</strong> Thúc đẩy quá trình tự đào thải mỡ thừa và độc tố ra khỏi cơ thể.</li>
-                <li><strong>Cân bằng tạng phủ:</strong> Giúp dạ dày thu nhỏ tự nhiên, điều chỉnh cảm giác thèm ăn mà không cần ép buộc.</li>
-                <li><strong>Khỏe bên trong, đẹp bên ngoài:</strong> Tăng cường lưu thông khí huyết, da dẻ hồng hào, tinh thần sảng khoái và ngủ ngon giấc hơn.</li>
+    <div class="container">
+
+        <!-- Nỗi Đau Khách Hàng -->
+        <div class="pain-section">
+            <h3 class="section-title"><i class="fa-solid fa-heart-broken"></i> Nỗi Đau Thầm Kín Ít Ai Thấu Hiểu...</h3>
+            <p style="font-size: 13px; margin-bottom: 12px; color: #666; text-align: center;">Sau khi thực hiện thiên chức làm mẹ, có phải bạn đang âm thầm chịu đựng:</p>
+            <ul class="pain-list">
+                <li><i class="fa-solid fa-circle-xmark"></i> <strong>Cô bé giãn rộng, kém đàn hồi:</strong> Mất đi sự ôm khít tự nhiên, cảm giác lỏng lẻo mỗi khi gần gũi.</li>
+                <li><i class="fa-solid fa-circle-xmark"></i> <strong>Khô rát & Đau đớn:</strong> Mất hoàn toàn khoái cảm, mỗi lần "yêu" trở thành nỗi ám ảnh, gượng ép.</li>
+                <li><i class="fa-solid fa-circle-xmark"></i> <strong>Tử cung lạnh, khí huyết trệ:</strong> Thường xuyên đau lưng, lạnh bụng dưới, kinh nguyệt không đều, da dẻ thâm sạm.</li>
+                <li><i class="fa-solid fa-circle-xmark"></i> <strong>Tâm lý e ngại, khoảng cách:</strong> Tự ti trước bạn đời, lo sợ chồng chán, lửa yêu gia đình dần nguội lạnh.</li>
             </ul>
         </div>
-    </section>
 
-    <!-- BẢNG SO SÁNH -->
-    <section class="container">
-        <h2 class="section-title">So Sánh Các Phương Pháp Giảm Béo</h2>
-        <p class="section-subtitle">Lựa chọn giải pháp an toàn và hiệu quả nhất cho bạn</p>
-        <div class="table-wrapper">
-            <table>
+        <!-- Giải Pháp Thuần Chay -->
+        <div class="solution-section">
+            <h3 class="section-title"><i class="fa-solid fa-hands-holding-heart"></i> Giải Pháp "Chạm Để Thăng Hoa"</h3>
+            <p style="font-size: 14px; text-align: center; color: #444;">
+                Chúng tôi mang đến phương pháp <strong>Bấm Huyệt Chuyên Sâu Bằng Tay Thuần Chay</strong>. Dựa trên cơ chế đả thông kinh lạc, kích thích lưu thông khí huyết và phục hồi cơ sàn chậu tự nhiên.
+            </p>
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <i class="fa-solid fa-ban"></i>
+                    Không Phẫu Thuật
+                </div>
+                <div class="feature-item">
+                    <i class="fa-solid fa-capsules"></i>
+                    Không Uống Thuốc
+                </div>
+                <div class="feature-item">
+                    <i class="fa-solid fa-utensils"></i>
+                    Không Ăn Kiêng
+                </div>
+                <div class="feature-item">
+                    <i class="fa-solid fa-bed"></i>
+                    Không Cần Nghỉ Dưỡng
+                </div>
+            </div>
+        </div>
+
+        <!-- Bảng So Sánh -->
+        <div class="comparison-section">
+            <h3 class="section-title"><i class="fa-solid fa-scale-balanced"></i> Bảng So Sánh Thực Tế</h3>
+            <table class="comp-table">
                 <thead>
                     <tr>
                         <th>Tiêu chí</th>
-                        <th class="highlight-col">Bấm Huyệt Aki Spa</th>
-                        <th>Hút Mỡ Phẫu Thuật</th>
-                        <th>Thuốc Giảm Cân</th>
-                        <th>Nhịn Ăn Ép Cân</th>
+                        <th>Bấm Huyệt Thuần Chay</th>
+                        <th>Phẫu Thuật Thẩm Mỹ</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><strong>Độ an toàn</strong></td>
-                        <td class="highlight-col">🟢 An toàn 100%, không xâm lấn</td>
-                        <td>🔴 Rủi ro cao, dễ biến chứng</td>
-                        <td>🟡 Dễ hại gan, thận, tim mạch</td>
-                        <td>🟡 Gây suy nhược cơ thể</td>
+                        <td>Độ An Toàn</td>
+                        <td class="comp-good">100% An toàn, không tác dụng phụ</td>
+                        <td class="comp-bad">Rủi ro biến chứng, nhiễm trùng</td>
                     </tr>
                     <tr>
-                        <td><strong>Mức độ đau</strong></td>
-                        <td class="highlight-col">🟢 Thư giãn, êm ái</td>
-                        <td>🔴 Đau đớn sau phẫu thuật</td>
-                        <td>🟡 Chóng mặt, mệt mỏi</td>
-                        <td>🟡 Đói cồn cào, kiệt sức</td>
+                        <td>Cảm Giác</td>
+                        <td class="comp-good">Thư giãn, ấm áp, đả thông khí huyết</td>
+                        <td class="comp-bad">Đau đớn, đụng chạm dao kéo</td>
                     </tr>
                     <tr>
-                        <td><strong>Ăn kiêng / Tập luyện</strong></td>
-                        <td class="highlight-col">🟢 Không cần tập vất vả / ăn kiêng hà khắc</td>
-                        <td>⚪ Vẫn phải giữ chế độ khắt khe</td>
-                        <td>⚪ Phải kết hợp ăn kiêng</td>
-                        <td>🔴 Ép buộc nhịn ăn căng thẳng</td>
+                        <td>Hồi Phục</td>
+                        <td class="comp-good">Sinh hoạt & gần gũi bình thường ngay</td>
+                        <td class="comp-bad">Kiêng quan hệ 1 - 2 tháng</td>
                     </tr>
                     <tr>
-                        <td><strong>Sức khỏe tổng thể</strong></td>
-                        <td class="highlight-col">🟢 Cải thiện khí huyết, khỏe từ bên trong</td>
-                        <td>🔴 Không cải thiện sức khỏe</td>
-                        <td>🔴 Mất nước, hại tiêu hóa</td>
-                        <td>🔴 Giảm hệ miễn dịch</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Tỷ lệ tái béo</strong></td>
-                        <td class="highlight-col">🟢 Rất thấp (Chuyển hóa đã cân bằng)</td>
-                        <td>🟡 Dễ tăng lại nếu bỏ duy trì</td>
-                        <td>🔴 Rất cao sau khi ngưng thuốc</td>
-                        <td>🔴 Rất cao (Hiệu ứng Yo-Yo)</td>
+                        <td>Tác Dụng Phụ</td>
+                        <td class="comp-good">Tử cung ấm áp, hồng hào tự nhiên</td>
+                        <td class="comp-bad">Dễ để lại sẹo cứng, mất cảm giác</td>
                     </tr>
                 </tbody>
             </table>
         </div>
-    </section>
 
-    <!-- ƯU VÀ NHƯỢC ĐIỂM -->
-    <section class="container">
-        <h2 class="section-title">Ưu Điểm & Nhược Điểm Minh Bạch</h2>
-        <p class="section-subtitle">Đánh giá khách quan giúp bạn an tâm trải nghiệm</p>
-        <div class="pros-cons-grid">
-            <div class="box-pros">
-                <h3>🟢 Ưu Điểm Tại Aki Spa</h3>
-                <ul>
-                    <li><strong>An toàn tuyệt đối:</strong> Không dao kéo, không hóa chất hay tác dụng phụ.</li>
-                    <li><strong>Cải thiện sức khỏe:</strong> Giúp ngủ sâu giấc, giảm đau mỏi vai gáy và hỗ trợ tiêu hóa.</li>
-                    <li><strong>Đẹp da tự nhiên:</strong> Khí huyết lưu thông giúp da dẻ mịn màng, săn chắc.</li>
-                    <li><strong>Giảm stress:</strong> Mỗi buổi liệu trình như một khoảng thời gian thư giãn dưỡng sinh.</li>
-                </ul>
+        <!-- Thông Tin Liên Hệ -->
+        <div class="info-box">
+            <h3 class="section-title" style="margin-bottom: 10px;">THÔNG TIN TRỊ LIỆU</h3>
+            <div class="info-item">
+                <i class="fa-solid fa-ribbon"></i>
+                <div><strong>Fanpage:</strong> Chạm Để Thăng Hoa</div>
             </div>
-            <div class="box-cons">
-                <h3>🟡 Nhược Điểm Cần Lưu Ý</h3>
-                <ul>
-                    <li><strong>Cần sự kiên trì:</strong> Cơ thể cần thời gian tự phục hồi và cân bằng chuyển hóa, không thể giảm siêu tốc trong vài ngày.</li>
-                    <li><strong>Tùy thuộc cơ địa:</strong> Thời gian nhận thấy hiệu quả có thể khác nhau tùy thuộc vào mức độ rối loạn chuyển hóa của từng người.</li>
-                </ul>
+            <div class="info-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <div><strong>Địa chỉ:</strong> Xóm 8, Đốc Tín, Hương Sơn, Hà Nội</div>
             </div>
-        </div>
-    </section>
-
-    <!-- THÔNG TIN LIÊN HỆ -->
-    <section class="container">
-        <div class="contact-card">
-            <h2 style="color: #1a4d2e; font-size: 20px;">LIÊN HỆ ĐẶT LỊCH TƯ VẤN</h2>
-            <p style="font-size: 13px; color: #555; margin-top: 5px;">Hãy đến với Aki Spa để bắt đầu hành trình thon gọn tự nhiên!</p>
-            
-            <div class="contact-info">
-                <p>🏡 <strong>Địa chỉ Spa:</strong> Xóm 8, Đốc Tín, Hương Sơn, Hà Nội</p>
-                <p>📞 <strong>Hotline/Zalo:</strong> <a href="tel:0328668505" style="color: #1a4d2e; font-weight: bold;">0328 668 505</a></p>
-                <p>✉️ <strong>Email:</strong> thu80879@gmail.com</p>
-                <p>⏰ <strong>Giờ mở cửa:</strong> Phục vụ tất cả các ngày trong tuần</p>
+            <div class="info-item">
+                <i class="fa-solid fa-car-side"></i>
+                <div><strong>Dịch vụ tận nhà:</strong> <span class="highlight-text">Linh hoạt di chuyển trị liệu tại nhà cho chị em ở khu vực lân cận!</span></div>
+            </div>
+            <div class="info-item">
+                <i class="fa-solid fa-envelope"></i>
+                <div><strong>Email:</strong> thu80879@gmail.com</div>
+            </div>
+            <div class="info-item">
+                <i class="fa-solid fa-phone-volume"></i>
+                <div><strong>Hotline/Zalo:</strong> <span class="highlight-text">0328.668.505 – 0788.254.998</span></div>
             </div>
         </div>
-    </section>
 
-    <!-- FOOTER -->
-    <footer>
-        <p>&copy; 2026 Thon Gọn Tự Nhiên Cùng Aki. All rights reserved.</p>
-        <p>Bấm Huyệt Cân Bằng Chuyển Hóa - Khỏe Bên Trong, Đẹp Bên Ngoài</p>
-    </footer>
+        <!-- Form Đăng Ký Tư Vấn -->
+        <div class="form-section">
+            <h3 class="section-title" style="color: #d81b60;">ĐĂNG KÝ TƯ VẤN BẢO MẬT</h3>
+            <p style="font-size: 12px; text-align: center; color: #777; margin-bottom: 15px;">Thông tin của bạn được cam kết giữ bí mật hoàn toàn 100%</p>
+            <form action="https://formspree.io/f/thu80879@gmail.com" method="POST">
+                <div class="form-group">
+                    <input type="text" name="Name" placeholder="Họ và tên của bạn..." required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" name="Phone" placeholder="Số điện thoại / Zalo..." required>
+                </div>
+                <div class="form-group">
+                    <textarea name="Note" rows="3" placeholder="Tình trạng bạn đang gặp phải (không bắt buộc)..."></textarea>
+                </div>
+                <button type="submit" class="btn-submit"><i class="fa-solid fa-paper-plane"></i> GỬI YÊU CẦU TƯ VẤN NGAY</button>
+            </form>
+        </div>
+
+    </div>
+
+    <!-- Thanh Nút Bấm Cố Định Bên Dưới -->
+    <div class="bottom-bar">
+        <a href="tel:0328668505" class="bottom-btn btn-call">
+            <i class="fa-solid fa-phone"></i> Gọi: 0328.668.505
+        </a>
+        <a href="https://zalo.me/0328668505" class="bottom-btn btn-zalo">
+            <i class="fa-solid fa-comment-dots"></i> Nhắn Zalo
+        </a>
+    </div>
 
 </body>
 </html>
