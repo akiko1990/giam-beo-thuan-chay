@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thon Gọn Tự Nhiên Cùng Aki - Giảm Béo Thuần Chay Bấm Huyệt</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* RESET & BASE STYLES */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Open Sans', sans-serif; color: #2d3748; line-height: 1.6; background-color: #f7fafc; }
+        h1, h2, h3, h4 { font-family: 'Montserrat', sans-serif; color: #1a4d2e; }
+        a { text-decoration: none; color: inherit; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 0 15px; }
+
+        /* HEADER */
+        header { background-color: #ffffff; box-shadow: 0 2px 10px rgba(0,0,0,0.08); position: sticky; top: 0; z-index: 1000; }
+        .header-container { display: flex; flex-direction: column; align-items: center; padding: 12px 15px; text-align: center; }
+        .brand-name { font-size: 20px; font-weight: 700; color: #1a4d2e; text-transform: uppercase; letter-spacing: 0.5px; }
+        .brand-slogan { font-size: 13px; color: #d4af37; font-weight: 600; margin-top: 2px; }
+
+        /* HERO SECTION */
+        .hero { background: linear-gradient(rgba(26, 77, 46, 0.9), rgba(26, 77, 46, 0.9)), url('https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=1000&q=80') center/cover; color: #fff; text-align: center; padding: 45px 15px; }
+        .hero h1 { color: #fff; font-size: 22px; margin-bottom: 12px; text-transform: uppercase; line-height: 1.4; }
+        .hero p { font-size: 14px; margin-bottom: 20px; opacity: 0.95; max-width: 700px; margin-left: auto; margin-right: auto; }
+        .btn-call { display: inline-block; background-color: #d4af37; color: #1a4d2e; padding: 12px 25px; border-radius: 25px; font-weight: 700; font-size: 14px; text-transform: uppercase; box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
+
+        /* FEATURES */
+        .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin-top: -25px; margin-bottom: 35px; }
+        .feature-card { background: #fff; padding: 18px 15px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.06); text-align: center; border-bottom: 3px solid #1a4d2e; }
+        .feature-card h3 { font-size: 15px; margin-bottom: 5px; }
+        .feature-card p { font-size: 13px; color: #666; }
+
+        /* SECTIONS */
+        .section-title { text-align: center; font-size: 20px; margin-bottom: 6px; color: #1a4d2e; }
+        .section-subtitle { text-align: center; color: #718096; margin-bottom: 25px; font-size: 13px; }
+
+        /* ABOUT METHOD */
+        .about-box { background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.04); margin-bottom: 35px; font-size: 14px; }
+        .about-box p { margin-bottom: 12px; }
+        .about-box ul { padding-left: 18px; }
+        .about-box li { margin-bottom: 8px; }
+
+        /* COMPARISON TABLE */
+        .table-wrapper { overflow-x: auto; background: #fff; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); margin-bottom: 35px; }
+        table { width: 100%; border-collapse: collapse; text-align: left; font-size: 13px; }
+        th, td { padding: 10px 12px; border-bottom: 1px solid #edf2f7; }
+        th { background-color: #1a4d2e; color: white; white-space: nowrap; }
+        .highlight-col { background-color: #f0fdf4; font-weight: 600; color: #166534; }
+
+        /* PROS AND CONS */
+        .pros-cons-grid { display: grid; grid-template-columns: 1fr; gap: 15px; margin-bottom: 35px; }
+        .box-pros, .box-cons { background: #fff; padding: 18px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.04); font-size: 13px; }
+        .box-pros { border-top: 4px solid #2e7d32; }
+        .box-cons { border-top: 4px solid #e65100; }
+        .box-pros h3, .box-cons h3 { font-size: 16px; margin-bottom: 10px; }
+        .box-pros ul, .box-cons ul { padding-left: 18px; }
+        .box-pros li, .box-cons li { margin-bottom: 8px; }
+
+        /* CONTACT & FOOTER */
+        .contact-card { background: #e8f5e9; padding: 25px 18px; border-radius: 10px; text-align: center; margin-bottom: 30px; }
+        .contact-info { margin-top: 15px; text-align: left; background: #fff; padding: 15px; border-radius: 8px; font-size: 14px; }
+        .contact-info p { margin-bottom: 8px; }
+        footer { background: #1a4d2e; color: #fff; text-align: center; padding: 18px; font-size: 12px; }
+
+        /* DESKTOP RESPONSIVE */
+        @media (min-width: 768px) {
+            .header-container { flex-direction: row; justify-content: space-between; }
+            .hero h1 { font-size: 28px; }
+            .hero p { font-size: 16px; }
+            .pros-cons-grid { grid-template-columns: 1fr 1fr; }
+            .section-title { font-size: 24px; }
+            .about-box, .contact-info { font-size: 15px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="container header-container">
+            <div class="brand-name">🌿 THON GỌN TỰ NHIÊN CÙNG AKI NÀO!</div>
+            <div class="brand-slogan">Sức Khỏe Bên Trong - Vóc Dáng Bên Ngoài</div>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="container">
+            <h1>Giảm Béo Thuần Chay Bằng Bấm Huyệt Cân Bằng Chuyển Hóa</h1>
+            <p>An toàn tuyệt đối - Không xâm lấn - Không uống thuốc - Không ăn kiêng hay tập luyện vất vả!</p>
+            <a href="tel:0328668505" class="btn-call">📞 Gọi Ngay: 0328 668 505</a>
+        </div>
+    </section>
+
+    <!-- HIGHLIGHTS -->
+    <div class="container">
+        <div class="features">
+            <div class="feature-card">
+                <h3>🚫 Không Xâm Lấn</h3>
+                <p>Không phẫu thuật, không tiêm chích đau đớn.</p>
+            </div>
+            <div class="feature-card">
+                <h3>🥗 Chuẩn Thuần Chay</h3>
+                <p>Nâng cao sức khỏe từ gốc rễ tế bào.</p>
+            </div>
+            <div class="feature-card">
+                <h3>💆 Bấm Huyệt Y Học</h3>
+                <p>Khai thông kinh lạc, kích thích đốt mỡ tự nhiên.</p>
+            </div>
+            <div class="feature-card">
+                <h3>🧘 Không Ép Cân</h3>
+                <p>Không nhịn ăn mệt mỏi, không sụt giảm sức khỏe.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- PHƯƠNG PHÁP -->
+    <section class="container">
+        <h2 class="section-title">Giải Pháp Giảm Béo Thuần Chay Là Gì?</h2>
+        <p class="section-subtitle">Phương pháp nuôi dưỡng sức khỏe tự nhiên tại Aki Spa</p>
+        <div class="about-box">
+            <p>Nhiều người gặp khó khăn trong việc giảm cân không phải do ăn quá nhiều, mà do <strong>hệ thống chuyển hóa trong cơ thể bị rối loạn</strong>, gây tích tụ mỡ thừa và độc tố.</p>
+            <p>Tại <strong>Thon Gọn Tự Nhiên Cùng Aki</strong>, phương pháp bấm huyệt tác động trực tiếp vào các huyệt đạo quan trọng giúp:</p>
+            <ul>
+                <li><strong>Đả thông kinh lạc:</strong> Thúc đẩy quá trình tự đào thải mỡ thừa và độc tố ra khỏi cơ thể.</li>
+                <li><strong>Cân bằng tạng phủ:</strong> Giúp dạ dày thu nhỏ tự nhiên, điều chỉnh cảm giác thèm ăn mà không cần ép buộc.</li>
+                <li><strong>Khỏe bên trong, đẹp bên ngoài:</strong> Tăng cường lưu thông khí huyết, da dẻ hồng hào, tinh thần sảng khoái và ngủ ngon giấc hơn.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- BẢNG SO SÁNH -->
+    <section class="container">
+        <h2 class="section-title">So Sánh Các Phương Pháp Giảm Béo</h2>
+        <p class="section-subtitle">Lựa chọn giải pháp an toàn và hiệu quả nhất cho bạn</p>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tiêu chí</th>
+                        <th class="highlight-col">Bấm Huyệt Aki Spa</th>
+                        <th>Hút Mỡ Phẫu Thuật</th>
+                        <th>Thuốc Giảm Cân</th>
+                        <th>Nhịn Ăn Ép Cân</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Độ an toàn</strong></td>
+                        <td class="highlight-col">🟢 An toàn 100%, không xâm lấn</td>
+                        <td>🔴 Rủi ro cao, dễ biến chứng</td>
+                        <td>🟡 Dễ hại gan, thận, tim mạch</td>
+                        <td>🟡 Gây suy nhược cơ thể</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Mức độ đau</strong></td>
+                        <td class="highlight-col">🟢 Thư giãn, êm ái</td>
+                        <td>🔴 Đau đớn sau phẫu thuật</td>
+                        <td>🟡 Chóng mặt, mệt mỏi</td>
+                        <td>🟡 Đói cồn cào, kiệt sức</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Ăn kiêng / Tập luyện</strong></td>
+                        <td class="highlight-col">🟢 Không cần tập vất vả / ăn kiêng hà khắc</td>
+                        <td>⚪ Vẫn phải giữ chế độ khắt khe</td>
+                        <td>⚪ Phải kết hợp ăn kiêng</td>
+                        <td>🔴 Ép buộc nhịn ăn căng thẳng</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Sức khỏe tổng thể</strong></td>
+                        <td class="highlight-col">🟢 Cải thiện khí huyết, khỏe từ bên trong</td>
+                        <td>🔴 Không cải thiện sức khỏe</td>
+                        <td>🔴 Mất nước, hại tiêu hóa</td>
+                        <td>🔴 Giảm hệ miễn dịch</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Tỷ lệ tái béo</strong></td>
+                        <td class="highlight-col">🟢 Rất thấp (Chuyển hóa đã cân bằng)</td>
+                        <td>🟡 Dễ tăng lại nếu bỏ duy trì</td>
+                        <td>🔴 Rất cao sau khi ngưng thuốc</td>
+                        <td>🔴 Rất cao (Hiệu ứng Yo-Yo)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- ƯU VÀ NHƯỢC ĐIỂM -->
+    <section class="container">
+        <h2 class="section-title">Ưu Điểm & Nhược Điểm Minh Bạch</h2>
+        <p class="section-subtitle">Đánh giá khách quan giúp bạn an tâm trải nghiệm</p>
+        <div class="pros-cons-grid">
+            <div class="box-pros">
+                <h3>🟢 Ưu Điểm Tại Aki Spa</h3>
+                <ul>
+                    <li><strong>An toàn tuyệt đối:</strong> Không dao kéo, không hóa chất hay tác dụng phụ.</li>
+                    <li><strong>Cải thiện sức khỏe:</strong> Giúp ngủ sâu giấc, giảm đau mỏi vai gáy và hỗ trợ tiêu hóa.</li>
+                    <li><strong>Đẹp da tự nhiên:</strong> Khí huyết lưu thông giúp da dẻ mịn màng, săn chắc.</li>
+                    <li><strong>Giảm stress:</strong> Mỗi buổi liệu trình như một khoảng thời gian thư giãn dưỡng sinh.</li>
+                </ul>
+            </div>
+            <div class="box-cons">
+                <h3>🟡 Nhược Điểm Cần Lưu Ý</h3>
+                <ul>
+                    <li><strong>Cần sự kiên trì:</strong> Cơ thể cần thời gian tự phục hồi và cân bằng chuyển hóa, không thể giảm siêu tốc trong vài ngày.</li>
+                    <li><strong>Tùy thuộc cơ địa:</strong> Thời gian nhận thấy hiệu quả có thể khác nhau tùy thuộc vào mức độ rối loạn chuyển hóa của từng người.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- THÔNG TIN LIÊN HỆ -->
+    <section class="container">
+        <div class="contact-card">
+            <h2 style="color: #1a4d2e; font-size: 20px;">LIÊN HỆ ĐẶT LỊCH TƯ VẤN</h2>
+            <p style="font-size: 13px; color: #555; margin-top: 5px;">Hãy đến với Aki Spa để bắt đầu hành trình thon gọn tự nhiên!</p>
+            
+            <div class="contact-info">
+                <p>🏡 <strong>Địa chỉ Spa:</strong> Xóm 8, Đốc Tín, Hương Sơn, Hà Nội</p>
+                <p>📞 <strong>Hotline/Zalo:</strong> <a href="tel:0328668505" style="color: #1a4d2e; font-weight: bold;">0328 668 505</a></p>
+                <p>✉️ <strong>Email:</strong> thu80879@gmail.com</p>
+                <p>⏰ <strong>Giờ mở cửa:</strong> Phục vụ tất cả các ngày trong tuần</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Thon Gọn Tự Nhiên Cùng Aki. All rights reserved.</p>
+        <p>Bấm Huyệt Cân Bằng Chuyển Hóa - Khỏe Bên Trong, Đẹp Bên Ngoài</p>
+    </footer>
+
+</body>
+</html>
