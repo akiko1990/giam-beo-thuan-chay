@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giảm Béo Thuần Chay - Bấm Huyệt Cân Bằng Chuyển Hóa</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Open Sans', sans-serif; color: #2d3748; line-height: 1.6; background-color: #f7fafc; }
+        h1, h2, h3, h4 { font-family: 'Montserrat', sans-serif; color: #1a4d2e; }
+        a { text-decoration: none; color: inherit; }
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+        header { background-color: #ffffff; box-shadow: 0 2px 10px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 1000; }
+        .nav-container { display: flex; justify-content: space-between; align-items: center; padding: 15px 20px; }
+        .logo { font-size: 20px; font-weight: 700; color: #2e7d32; text-transform: uppercase; }
+        .hero { background: linear-gradient(rgba(26, 77, 46, 0.88), rgba(26, 77, 46, 0.88)), url('https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=1350&q=80') center/cover; color: #fff; text-align: center; padding: 60px 20px; }
+        .hero h1 { color: #fff; font-size: 24px; margin-bottom: 15px; text-transform: uppercase; line-height: 1.3; }
+        .hero p { font-size: 15px; max-width: 750px; margin: 0 auto 25px; opacity: 0.95; }
+        .btn-cta { display: inline-block; background-color: #4caf50; color: #fff; padding: 14px 28px; border-radius: 30px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
+        .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 15px; margin-top: -30px; margin-bottom: 40px; }
+        .feature-box { background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.06); text-align: center; border-bottom: 4px solid #4caf50; }
+        .feature-box h3 { font-size: 16px; margin-bottom: 8px; color: #1a4d2e; }
+        .feature-box p { font-size: 14px; }
+        .section-title { text-align: center; font-size: 22px; margin-bottom: 10px; color: #1a4d2e; }
+        .section-subtitle { text-align: center; color: #718096; margin-bottom: 30px; font-size: 14px; }
+        .about-method { background: #fff; padding: 25px; border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,0.04); margin-bottom: 40px; }
+        .about-method p { margin-bottom: 15px; font-size: 14px; color: #4a5568; }
+        .about-method ul { padding-left: 20px; margin-top: 10px; }
+        .about-method li { margin-bottom: 10px; color: #4a5568; font-size: 14px; }
+        .comparison-section { margin-bottom: 40px; }
+        .comparison-table-wrapper { overflow-x: auto; background: #fff; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+        table { width: 100%; border-collapse: collapse; text-align: left; }
+        th, td { padding: 12px 14px; border-bottom: 1px solid #edf2f7; font-size: 13px; }
+        th { background-color: #1a4d2e; color: white; font-weight: 600; white-space: nowrap; }
+        tr:nth-child(even) { background-color: #f8fafc; }
+        .highlight-col { background-color: #f0fdf4; font-weight: 600; color: #166534; }
+        .pros-cons { display: grid; grid-template-columns: 1fr; gap: 20px; margin-bottom: 40px; }
+        .pros-box, .cons-box { background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+        .pros-box { border-top: 5px solid #2e7d32; }
+        .cons-box { border-top: 5px solid #e65100; }
+        .pros-box h3, .cons-box h3 { margin-bottom: 12px; font-size: 17px; }
+        .pros-box ul, .cons-box ul { padding-left: 18px; }
+        .pros-box li, .cons-box li { margin-bottom: 8px; font-size: 13px; color: #4a5568; }
+        .cta-section { background: #e8f5e9; padding: 35px 20px; text-align: center; border-radius: 12px; margin-bottom: 40px; }
+        .cta-form { max-width: 400px; margin: 15px auto 0; display: flex; flex-direction: column; gap: 10px; }
+        .cta-form input, .cta-form button { padding: 12px 15px; border-radius: 8px; border: 1px solid #cbd5e0; font-size: 14px; }
+        .cta-form button { background-color: #1a4d2e; color: white; border: none; font-weight: 700; cursor: pointer; text-transform: uppercase; }
+        footer { background: #1a4d2e; color: #e2e8f0; text-align: center; padding: 20px; font-size: 12px; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container nav-container">
+            <div class="logo">🌿 Thuần Chay Dưỡng Sinh</div>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="container">
+            <h1>Giảm Béo Thuần Chay - Cân Bằng Chuyển Hóa</h1>
+            <p>Giải pháp vóc dáng tự nhiên: Khỏe Bên Trong - Đẹp Bên Ngoài. Không phẫu thuật xâm lấn, không uống thuốc, không ăn kiêng hay tập luyện vất vả.</p>
+            <a href="#contact" class="btn-cta">Nhận Tư Vấn Miễn Phí</a>
+        </div>
+    </section>
+    <div class="container">
+        <div class="features">
+            <div class="feature-box">
+                <h3>🚫 Không Xâm Lấn</h3>
+                <p>Không phẫu thuật, không tiêm chích, an toàn tuyệt đối cho cơ thể.</p>
+            </div>
+            <div class="feature-box">
+                <h3>🥗 Chuẩn Thuần Chay</h3>
+                <p>Kết hợp lối sống xanh, nuôi dưỡng sức khỏe từ sâu tế bào.</p>
+            </div>
+            <div class="feature-box">
+                <h3>💆 Bấm Huyệt Chuẩn Y Học</h3>
+                <p>Khai thông kinh lạc, kích thích cơ thể tự đốt cháy mỡ thừa.</p>
+            </div>
+            <div class="feature-box">
+                <h3>🧘 Không Kiêng Căng Thẳng</h3>
+                <p>Cân bằng chuyển hóa tự nhiên, không mất sức, không mệt mỏi.</p>
+            </div>
+        </div>
+    </div>
+    <section id="about" class="container">
+        <h2 class="section-title">Giảm Béo Cân Bằng Chuyển Hóa Là Gì?</h2>
+        <p class="section-subtitle">Cơ chế phục hồi từ bên trong của Đông y kết hợp triết lý Thuần Chay</p>
+        <div class="about-method">
+            <p>Nhiều người béo phì không phải do ăn quá nhiều, mà do <strong>hệ thống chuyển hóa trong cơ thể bị rối loạn</strong>, dẫn đến việc tích tụ độc tố và mỡ thừa. Các phương pháp ép cân tiêu cực thường khiến cơ thể mệt mỏi, sụt giảm sức đề kháng và dễ tăng cân trở lại.</p>
+            <p><strong>Phương pháp Giảm Béo Thuần Chay bằng Bấm Huyệt Cân Bằng Chuyển Hóa</strong> ứng dụng kỹ thuật tác động lên các huyệt đạo quan trọng (Tỳ, Vị, Thận...). Việc này giúp:</p>
+            <ul>
+                <li><strong>Khai thông kinh lạc:</strong> Đẩy nhanh quá trình bài tiết độc tố và mỡ thừa tích tụ lâu năm.</li>
+                <li><strong>Cân bằng tạng phủ:</strong> Giúp dạ dày thu nhỏ tự nhiên, tự động điều chỉnh cảm giác thèm ăn mà không cần ép buộc.</li>
+                <li><strong>Khỏe bên trong, đẹp bên ngoài:</strong> Tăng cường tuần hoàn máu, giúp da dẻ hồng hào, tinh thần sảng khoái và giấc ngủ sâu hơn.</li>
+            </ul>
+        </div>
+    </section>
+    <section id="comparison" class="container comparison-section">
+        <h2 class="section-title">So Sánh Bấm Huyệt Với Các Phương Pháp Khác</h2>
+        <p class="section-subtitle">Cái nhìn khách quan giúp bạn lựa chọn giải pháp phù hợp nhất</p>
+        <div class="comparison-table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tiêu chí</th>
+                        <th class="highlight-col">Bấm Huyệt Cân Bằng</th>
+                        <th>Hút Mỡ Phẫu Thuật</th>
+                        <th>Thuốc Giảm Cân</th>
+                        <th>Ăn Kiêng Cực Đoan</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Độ an toàn / Xâm lấn</strong></td>
+                        <td class="highlight-col">🟢 100% An toàn, không xâm lấn</td>
+                        <td>🔴 Rủi ro cao, biến chứng phẫu thuật</td>
+                        <td>🟡 Nguy cơ hại gan, thận, tim mạch</td>
+                        <td>🟡 Dễ suy nhược, thiếu chất</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Mức độ đau đớn</strong></td>
+                        <td class="highlight-col">🟢 Thư giãn, không đau</td>
+                        <td>🔴 Đau đớn sau phẫu thuật, cần nghỉ dưỡng</td>
+                        <td>🟡 Mệt mỏi, chóng mặt, buồn nôn</td>
+                        <td>🟡 Đói cồn cào, kiệt sức</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Tập luyện & Ăn kiêng</strong></td>
+                        <td class="highlight-col">🟢 Không cần tập vất vả / ăn kiêng hà khắc</td>
+                        <td>⚪ Cần duy trì chế độ nghiêm ngặt sau đó</td>
+                        <td>⚪ Vẫn phải kết hợp ăn kiêng</td>
+                        <td>🔴 Phải nhịn ăn hoặc tập quá sức</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Lợi ích sức khỏe</strong></td>
+                        <td class="highlight-col">🟢 Đả thông kinh lạc, khỏe từ bên trong</td>
+                        <td>🔴 Không cải thiện sức khỏe tổng thể</td>
+                        <td>🔴 Dễ gây mất nước, hại đường ruột</td>
+                        <td>🔴 Dễ làm suy giảm hệ miễn dịch</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Tỷ lệ tái béo</strong></td>
+                        <td class="highlight-col">🟢 Thấp (Do chuyển hóa đã cân bằng)</td>
+                        <td>🟡 Có thể tái béo nếu không giữ miệng</td>
+                        <td>🔴 Rất cao ngay khi ngừng thuốc</td>
+                        <td>🔴 Cao (Hiệu ứng Yo-Yo)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <section id="pros-cons" class="container">
+        <h2 class="section-title">Đánh Giá Ưu & Nhược Điểm</h2>
+        <p class="section-subtitle">Chúng tôi luôn minh bạch để khách hàng hiểu rõ trước khi thực hiện</p>
+        <div class="pros-cons">
+            <div class="pros-box">
+                <h3>🟢 Ưu Điểm (Bấm Huyệt Cân Bằng)</h3>
+                <ul>
+                    <li><strong>An toàn tuyệt đối:</strong> Không đụng dao kéo, không tác dụng phụ của hóa chất.</li>
+                    <li><strong>Cải thiện sức khỏe toàn diện:</strong> Giúp ngủ ngon, giảm đau mỏi vai gáy, hỗ trợ tiêu hóa.</li>
+                    <li><strong>Làm đẹp da:</strong> Khai thông khí huyết giúp da dẻ mịn màng, hồng hào hơn.</li>
+                    <li><strong>Tự nhiên, lâu dài:</strong> Giảm béo dựa trên cơ chế tự phục hồi của cơ thể, không phụ thuộc vào phương pháp.</li>
+                    <li><strong>Thư giãn:</strong> Mỗi buổi liệu trình như một khoảng thời gian spa dưỡng sinh xả stress.</li>
+                </ul>
+            </div>
+            <div class="cons-box">
+                <h3>🟡 Nhược Điểm (Cần Lưu Ý)</h3>
+                <ul>
+                    <li><strong>Cần thời gian & kiên trì:</strong> Không thể giảm siêu tốc hàng chục kg trong vài ngày như phẫu thuật.</li>
+                    <li><strong>Đòi hỏi tay nghề cao:</strong> Cần kỹ thuật viên am hiểu chính xác hệ thống huyệt đạo và y học cổ truyền.</li>
+                    <li><strong>Phụ thuộc vào cơ địa:</strong> Tốc độ cân bằng chuyển hóa của mỗi người khác nhau nên thời gian có kết quả sẽ khác nhau.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="container">
+        <div class="cta-section">
+            <h2>Bắt Đầu Hành Trình "Khỏe Bên Trong - Đẹp Bên Ngoài"</h2>
+            <p>Hãy để lại thông tin để chuyên gia Đông Y Dưỡng Sinh tư vấn liệu trình Giảm Béo Thuần Chay phù hợp nhất với cơ địa của bạn!</p>
+            <form class="cta-form" onsubmit="event.preventDefault(); alert('Cảm ơn bạn đã đăng ký! Chúng tôi sẽ liên hệ lại sớm nhất.');">
+                <input type="text" placeholder="Họ và tên của bạn" required>
+                <input type="tel" placeholder="Số điện thoại / Zalo" required>
+                <button type="submit">ĐĂNG KÝ TƯ VẤN MIỄN PHÍ</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; Trang Web Giảm Béo Thuần Chay & Bấm Huyệt Dưỡng Sinh.</p>
+            <p>Sức Khỏe Từ Tự Nhiên - Vóc Dáng Từ Cân Bằng</p>
+        </div>
+    </footer>
+</body>
+</html>
